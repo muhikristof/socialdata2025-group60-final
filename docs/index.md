@@ -12,6 +12,8 @@ title: Home
 ## Data sources
 ## Basic distributionss of data
 
+![Holiday traffic](/assets/images/basic_distributions.png)
+
 # Traffic patterns
 ## Holidays
 
