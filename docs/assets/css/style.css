@@ -1,0 +1,18 @@
+/* For the main content container */
+.container {
+    max-width: 100%; /* Remove any max-width */
+    width: 100%;     /* Set the width to 100% of the available space */
+    margin: 0 auto;  /* Center the content */
+    padding: 0 20px; /* Add some padding for spacing */
+  }
+  
+  /* Optional: If you have a wrapper or another container around content */
+  .main-content {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* If you want to change the header area (optional) */
+  .site-header {
+    max-width: 100%;
+  }
