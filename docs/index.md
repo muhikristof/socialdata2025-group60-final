@@ -13,10 +13,6 @@ As cities grow and change, mobility demands can increase and change along with i
 Understanding traffic patterns is essential for efficient and sustainable urban planning.
 This is especially true in cities like Copenhagen, which has made significant investments in cycling infrastructure and green mobility.
 
-## Basic distributionss of data
-
-![Holiday traffic](/assets/images/basic_distributions.png)
-
 ## Motivation
 
 We were interested in investingating traffic patterns in Copenhagen.
@@ -26,6 +22,10 @@ Understanding traffic patterns in an urban setting can be critical to city plann
 We analyze a dataset, detailing traffic in Copenhaven between 2004 and 2014. Data was recorded with inductive traffic loops embedded in the road surface at 22 stations around the city
 giving us measures of traffic flow in cars/hour.
 By extending this dataset with additional information, such as weather data, dates of holidays etc, we are able to explore a lot of different factors that may influence traffic.
+
+## Basic distributions of data
+
+![Holiday traffic](/assets/images/basic_distributions.png)
 
 ## Data sources
 
