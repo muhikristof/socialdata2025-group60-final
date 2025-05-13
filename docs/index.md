@@ -9,6 +9,10 @@ title: Home
 
 # Introduction
 
+As cities grow and change, mobility demands can increase and change along with it.
+Understanding traffic patterns is essential for efficient and sustainable urban planning.
+This is especially true in cities like Copenhagen, which has made significant investments in cycling infrastructure and green mobility.
+
 ## Basic distributionss of data
 
 ![Holiday traffic](/assets/images/basic_distributions.png)
@@ -17,6 +21,11 @@ title: Home
 
 We were interested in investingating traffic patterns in Copenhagen.
 Knowing when people choose to drive can give us insight into how demand for transportation changes and help us deploy alternaive modes of transportation more effectively.
+
+Understanding traffic patterns in an urban setting can be critical to city planning, sustainability efforts and improving public safety.
+We analyze a dataset, detailing traffic in Copenhaven between 2004 and 2014. Data was recorded with inductive traffic loops embedded in the road surface at 22 stations around the city
+giving us measures of traffic flow in cars/hour.
+By extending this dataset with additional information, such as weather data, dates of holidays etc, we are able to explore a lot of different factors that may influence traffic.
 
 ## Data sources
 
@@ -30,15 +39,15 @@ Data was gathered from:
 
 ## Traffic station availability
 
-![Online/offline status](/pics/onlinestatus.png)
+![Online/offline status](/assets/images/onlinestatus.png)
 
-These traffic stations frequently go offline. This can be due to maintenance, the station getting removed, or the road getting repaved.
+One important limitation of the dataset is the inconsistency in data availability from the induction loops. These sensors, which record traffic counts, occasionally go offline—sometimes for short periods, such as days, and in other cases for months or even permanently. This results in gaps in the dataset that can affect both the spatial and temporal coverage of our analysis. The plot above illustrates the distribution of active sensors over time, highlighting these interruptions. When interpreting results, especially those involving long-term trends or spatial comparisons, it is essential to account for these missing data periods.
 
 # Traffic patterns
 
 ## Weekdays, Weekends, Long term trends
 
-![Station Map](/pics/stationmaps3.png)
+![Station Map](/assets/images/stationmaps3.png)
 
 This visualizes the locations of the traffic stations, the id they are refferred by,
 which direction the station is facing and traffic patterns in each direction for weekdays and weekends separately.
@@ -55,7 +64,7 @@ These trends can be observed on all stations, however each station also has it's
 For example, the pattern in directionality does not hold for all stations, but holds for almost all stations that are on roads directly leading to the city center.
 
 
-![Long term trend](/pics/longterm.png)
+![Long term trend](/assets/images/longterm.png)
 - **Long term trends:** On these plots we show how each stations traffic pattern changes over the span of the dataset.
 Because the stations keep going offline and online, only 8 stations have data complete enough to make this plot,
 other stations had at least 1 year where they were online for less than a week.
@@ -66,7 +75,7 @@ This traffic trend resembles a typical weekdays traffic trend instead.
 After some research we found the change was likely due to the construction of the SEB Domocile on the street corner, which has been finished in 2010.
 So the change in traffic was there because of all the people involved with the project was working on it over the weekends.
 
-![Construction](/pics/construction.png)
+![Construction](/assets/images/construction.PNG)
 
 ## Holidays
 
@@ -164,7 +173,7 @@ Denmark experiences **frequent rainfall** and **relatively few sunny days** thro
 | Person | Assigned task |
 |:----------|:----------|
 | Bence Gattyan | Finding datasets, combining and formatting them |
-| Bence Gattyan | Traffic patterns #1 weekends and weekdays, unique station patterns |
+| Bence Gattyan | Weekends and weekdays, Unique station patterns |
 | João Diogo Silva Oliveira | Bokeh plot, Daily Accident Patterns by Day of the Week in Copenhagen, Accident heatmap  |
 | Kristof Muhi | Holidays, Effects of Rain, Danish weather |
 | Kristof Muhi | Making the website in Github Pages |
