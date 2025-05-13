@@ -9,11 +9,19 @@ title: Home
 
 # Introduction
 
+As cities grow and change, mobility demands can increase and change along with it.
+Understanding traffic patterns is essential for efficient and sustainable urban planning. 
+This is especially true in cities like Copenhagen, which has made significant investments in cycling infrastructure and green mobility.
 
 ## Motivation
 
 We were interested in investingating traffic patterns in Copenhagen.
 Knowing when people choose to drive can give us insight into how demand for transportation changes and help us deploy alternaive modes of transportation more effectively.
+
+Understanding traffic patterns in an urban setting can be critical to city planning, sustainability efforts and improving public safety.
+We analyze a dataset, detailing traffic in Copenhaven between 2004 and 2014. Data was recorded with inductive traffic loops embedded in the road surface at 22 stations around the city
+giving us measures of traffic flow in cars/hour.
+By extending this dataset with additional information, such as weather data, dates of holidays etc, we are able to explore a lot of different factors that may influence traffic. 
 
 ## Data sources
 
@@ -29,7 +37,7 @@ Holidays couldn't be directly obtained as csv so I scraped each relevant year by
 
 ![Online/offline status](/pics/onlinestatus.png)
 
-These traffic stations frequently go offline. This can be due to maintenance, the station getting removed, or the road getting repaved.
+One important limitation of the dataset is the inconsistency in data availability from the induction loops. These sensors, which record traffic counts, occasionally go offline—sometimes for short periods, such as days, and in other cases for months or even permanently. This results in gaps in the dataset that can affect both the spatial and temporal coverage of our analysis. The plot above illustrates the distribution of active sensors over time, highlighting these interruptions. When interpreting results, especially those involving long-term trends or spatial comparisons, it is essential to account for these missing data periods.
 
 # Traffic patterns 1
 
