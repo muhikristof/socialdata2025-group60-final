@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.7.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.7.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="d154fdb3-67e7-4438-9188-229d2188333f" data-root-id="p1160" style="display: contents;"></div>
+  
+    <script type="application/json" id="e8cc07d8-0583-4944-8ebb-198731bb584c">
+      {"d5772958-d2b1-47a3-9d73-90a555db332b":{"version":"3.7.0","title":"Bokeh Application","roots":[{"type":"object","name":"Column","id":"p1160","attributes":{"children":[{"type":"object","name":"Select","id":"p1158","attributes":{"js_property_callbacks":{"type":"map","entries":[["change:value",[{"type":"object","name":"CustomJS","id":"p1159","attributes":{"args":{"type":"map","entries":[["source",{"type":"object","name":"ColumnDataSource","id":"p1109","attributes":{"selected":{"type":"object","name":"Selection","id":"p1110","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1111"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAABMAAAAUAAAAFQAAABYAAAAXAAAA"},"shape":[24],"dtype":"int32","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":"NAAAACgAAAAmAAAAFgAAACUAAABKAAAA+wAAANsBAAB7AQAAIgEAAAABAAAXAQAAFQEAAFUBAACXAQAATQIAAHACAACjAQAAXQEAAPEAAADPAAAAwQAAAIYAAABUAAAA"},"shape":[24],"dtype":"int32","order":"little"}]]}}}],["full_data",{"type":"map","entries":[["Monday",[52,40,38,22,37,74,251,475,379,290,256,279,277,341,407,589,624,419,349,241,207,193,134,84]],["Tuesday",[75,41,35,33,44,58,231,461,377,247,259,282,296,343,471,564,577,462,326,253,180,169,135,101]],["Wednesday",[58,53,36,17,49,64,222,470,335,262,218,277,315,337,453,532,586,434,302,253,222,185,147,120]],["Thursday",[71,43,45,38,48,84,235,457,350,261,270,298,330,342,426,605,579,486,390,276,237,255,203,120]],["Friday",[116,69,55,69,65,95,243,446,312,231,277,360,378,447,551,522,475,435,412,268,270,229,262,229]],["Saturday",[223,219,202,164,149,148,113,106,113,178,244,307,359,306,321,325,309,355,278,232,206,212,201,230]],["Sunday",[229,174,181,162,150,162,149,106,101,135,169,234,253,267,281,302,294,358,268,220,202,167,140,74]],["Hour",[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]]]}],["select",{"id":"p1158"}],["plot",{"type":"object","name":"Figure","id":"p1112","attributes":{"width":800,"height":400,"x_range":{"type":"object","name":"Range1d","id":"p1122","attributes":{"end":23}},"y_range":{"type":"object","name":"Range1d","id":"p1123","attributes":{"end":674}},"x_scale":{"type":"object","name":"LinearScale","id":"p1124"},"y_scale":{"type":"object","name":"LinearScale","id":"p1125"},"title":{"type":"object","name":"Title","id":"p1115","attributes":{"text":"Number of Accidents Throughout the Day (Monday)"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1154","attributes":{"data_source":{"id":"p1109"},"view":{"type":"object","name":"CDSView","id":"p1155","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1156"}}},"glyph":{"type":"object","name":"Line","id":"p1151","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"#5e4fa2","line_width":3}},"nonselection_glyph":{"type":"object","name":"Line","id":"p1152","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"#5e4fa2","line_alpha":0.1,"line_width":3}},"muted_glyph":{"type":"object","name":"Line","id":"p1153","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"#5e4fa2","line_alpha":0.2,"line_width":3}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1121","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1136"},{"type":"object","name":"WheelZoomTool","id":"p1137","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1138","attributes":{"dimensions":"both","overlay":{"type":"object","name":"BoxAnnotation","id":"p1139","attributes":{"syncable":false,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","handles":{"type":"object","name":"BoxInteractionHandles","id":"p1145","attributes":{"all":{"type":"object","name":"AreaVisuals","id":"p1144","attributes":{"fill_color":"white","hover_fill_color":"lightgray"}}}}}}}},{"type":"object","name":"ResetTool","id":"p1146"},{"type":"object","name":"HoverTool","id":"p1157","attributes":{"renderers":"auto","tooltips":[["Hour","@x"],["Accidents","@y"]],"mode":"vline"}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1131","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1132","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1133"},"axis_label":"Number of Accidents","major_label_policy":{"type":"object","name":"AllLabels","id":"p1134"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p1126","attributes":{"ticker":{"type":"object","name":"FixedTicker","id":"p1147","attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],"minor_ticks":[]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1128"},"axis_label":"Hour of Day","major_label_orientation":1,"major_label_policy":{"type":"object","name":"AllLabels","id":"p1129"}}}],"center":[{"type":"object","name":"Grid","id":"p1130","attributes":{"axis":{"id":"p1126"}}},{"type":"object","name":"Grid","id":"p1135","attributes":{"dimension":1,"axis":{"id":"p1131"}}}]}}],["line",{"id":"p1154"}]]},"code":"\n    const day = select.value;\n    source.data['y'] = full_data[day];\n    source.change.emit();\n    plot.title.text = \"Number of Accidents Throughout the Day (\" + day + \")\";\n    line.legend_label = day;\n"}}]]]},"title":"Select Day of the Week","options":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"value":"Monday"}},{"id":"p1112"}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('e8cc07d8-0583-4944-8ebb-198731bb584c').textContent;
+              const render_items = [{"docid":"d5772958-d2b1-47a3-9d73-90a555db332b","roots":{"p1160":"d154fdb3-67e7-4438-9188-229d2188333f"},"root_ids":["p1160"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
