@@ -48,6 +48,10 @@
 
 <h1 id="introduction">Introduction</h1>
 
+<p>As cities grow and change, mobility demands can increase and change along with it.
+Understanding traffic patterns is essential for efficient and sustainable urban planning.
+This is especially true in cities like Copenhagen, which has made significant investments in cycling infrastructure and green mobility.</p>
+
 <h2 id="basic-distributionss-of-data">Basic distributionss of data</h2>
 
 <p><img src="/socialdata2025-group60-final/assets/images/basic_distributions.png" alt="Holiday traffic" /></p>
@@ -56,6 +60,11 @@
 
 <p>We were interested in investingating traffic patterns in Copenhagen.
 Knowing when people choose to drive can give us insight into how demand for transportation changes and help us deploy alternaive modes of transportation more effectively.</p>
+
+<p>Understanding traffic patterns in an urban setting can be critical to city planning, sustainability efforts and improving public safety.
+We analyze a dataset, detailing traffic in Copenhaven between 2004 and 2014. Data was recorded with inductive traffic loops embedded in the road surface at 22 stations around the city
+giving us measures of traffic flow in cars/hour.
+By extending this dataset with additional information, such as weather data, dates of holidays etc, we are able to explore a lot of different factors that may influence traffic.</p>
 
 <h2 id="data-sources">Data sources</h2>
 
@@ -74,15 +83,15 @@ Knowing when people choose to drive can give us insight into how demand for tran
 
 <h2 id="traffic-station-availability">Traffic station availability</h2>
 
-<p><img src="/socialdata2025-group60-final/pics/onlinestatus.png" alt="Online/offline status" /></p>
+<p><img src="/socialdata2025-group60-final/assets/images/onlinestatus.png" alt="Online/offline status" /></p>
 
-<p>These traffic stations frequently go offline. This can be due to maintenance, the station getting removed, or the road getting repaved.</p>
+<p>One important limitation of the dataset is the inconsistency in data availability from the induction loops. These sensors, which record traffic counts, occasionally go offline—sometimes for short periods, such as days, and in other cases for months or even permanently. This results in gaps in the dataset that can affect both the spatial and temporal coverage of our analysis. The plot above illustrates the distribution of active sensors over time, highlighting these interruptions. When interpreting results, especially those involving long-term trends or spatial comparisons, it is essential to account for these missing data periods.</p>
 
 <h1 id="traffic-patterns">Traffic patterns</h1>
 
 <h2 id="weekdays-weekends-long-term-trends">Weekdays, Weekends, Long term trends</h2>
 
-<p><img src="/socialdata2025-group60-final/pics/stationmaps3.png" alt="Station Map" /></p>
+<p><img src="/socialdata2025-group60-final/assets/images/stationmaps3.png" alt="Station Map" /></p>
 
 <p>This visualizes the locations of the traffic stations, the id they are refferred by,
 which direction the station is facing and traffic patterns in each direction for weekdays and weekends separately.</p>
@@ -100,7 +109,7 @@ than people who love in the center, but work outside of it.</li>
 <p>These trends can be observed on all stations, however each station also has it’s own unique was of manifesting this trend.
 For example, the pattern in directionality does not hold for all stations, but holds for almost all stations that are on roads directly leading to the city center.</p>
 
-<p><img src="/socialdata2025-group60-final/pics/longterm.png" alt="Long term trend" /></p>
+<p><img src="/socialdata2025-group60-final/assets/images/longterm.png" alt="Long term trend" /></p>
 <ul>
   <li><strong>Long term trends:</strong> On these plots we show how each stations traffic pattern changes over the span of the dataset.
 Because the stations keep going offline and online, only 8 stations have data complete enough to make this plot,
@@ -113,7 +122,7 @@ This traffic trend resembles a typical weekdays traffic trend instead.
 After some research we found the change was likely due to the construction of the SEB Domocile on the street corner, which has been finished in 2010.
 So the change in traffic was there because of all the people involved with the project was working on it over the weekends.</p>
 
-<p><img src="/pics/construction.png" alt="Construction" /></p>
+<p><img src="/socialdata2025-group60-final/assets/images/construction.PNG" alt="Construction" /></p>
 
 <h2 id="holidays">Holidays</h2>
 
@@ -248,7 +257,7 @@ So the change in traffic was there because of all the people involved with the p
     </tr>
     <tr>
       <td style="text-align: left">Bence Gattyan</td>
-      <td style="text-align: left">Traffic patterns #1 weekends and weekdays, unique station patterns</td>
+      <td style="text-align: left">Weekends and weekdays, Unique station patterns</td>
     </tr>
     <tr>
       <td style="text-align: left">João Diogo Silva Oliveira</td>
