@@ -4,6 +4,8 @@ Data gathered from:<br/>
 Traffic data: https://www.opendata.dk/city-of-copenhagen/faste-trafiktaellinger <br/>
 Weather data: https://open-meteo.com/en/docs/historical-weather-api?start_date=2005-01-01&end_date=2014-12-31&timezone=auto&latitude=55.6806&longitude=12.5492&hourly=temperature_2m,relative_humidity_2m,rain,snowfall,wind_speed_10m,weather_code,apparent_temperature,cloud_cover <br/>
 Holiday data: https://www.timeanddate.com/holidays/denmark/ <br/>
+Bike rides data: https://www.kaggle.com/datasets/emilhvitfeldt/bike-traffic-counts-in-copenhagen <br/>
+Accidents data: https://www.statbank.dk/UHELD4 <br/>
 Holidays couldn't be directly obtained as csv so I scraped each relevant year by hand into a csv file.<br/>
 
 trafficconverter.ipynb removes the first few not needed rows of the original dataset and<br/>
