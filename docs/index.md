@@ -20,11 +20,13 @@ Knowing when people choose to drive can give us insight into how demand for tran
 
 ## Data sources
 
-Data was gathered from:<br/>
-Traffic data: https://www.opendata.dk/city-of-copenhagen/faste-trafiktaellinger <br/>
-Weather data: https://open-meteo.com/en/docs/historical-weather-api?start_date=2005-01-01&end_date=2014-12-31&timezone=auto&latitude=55.6806&longitude=12.5492&hourly=temperature_2m,relative_humidity_2m,rain,snowfall,wind_speed_10m,weather_code,apparent_temperature,cloud_cover <br/>
-Holiday data: https://www.timeanddate.com/holidays/denmark/ <br/>
-Holidays couldn't be directly obtained as csv so I scraped each relevant year by hand into a csv file.<br/>
+Data was gathered from:
+- **Traffic data:** [City of Copenhagen - Faste Trafiktællinger](https://www.opendata.dk/city-of-copenhagen/faste-trafiktaellinger)
+- **Weather data:** [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api?start_date=2005-01-01&end_date=2014-12-31&timezone=auto&latitude=55.6806&longitude=12.5492&hourly=temperature_2m,relative_humidity_2m,rain,snowfall,wind_speed_10m,weather_code,apparent_temperature,cloud_cover)
+- **Holiday data:** [Denmark Holidays - Time and Date](https://www.timeanddate.com/holidays/denmark/)
+  - Holidays couldn't be directly obtained as CSV, so we scraped each relevant year by hand into a CSV file.
+- **Bike rides data:** [Bike Traffic Counts in Copenhagen - Kaggle](https://www.kaggle.com/datasets/emilhvitfeldt/bike-traffic-counts-in-copenhagen)
+- **Accidents data:** [StatBank Denmark - UHELD4](https://www.statbank.dk/UHELD4)
 
 ## Traffic station availability
 

@@ -47,13 +47,74 @@
 </ul>
 
 <h1 id="introduction">Introduction</h1>
-<h2 id="motivation">Motivation</h2>
-<h2 id="data-sources">Data sources</h2>
+
 <h2 id="basic-distributionss-of-data">Basic distributionss of data</h2>
 
 <p><img src="/socialdata2025-group60-final/assets/images/basic_distributions.png" alt="Holiday traffic" /></p>
 
+<h2 id="motivation">Motivation</h2>
+
+<p>We were interested in investingating traffic patterns in Copenhagen.
+Knowing when people choose to drive can give us insight into how demand for transportation changes and help us deploy alternaive modes of transportation more effectively.</p>
+
+<h2 id="data-sources">Data sources</h2>
+
+<p>Data was gathered from:</p>
+<ul>
+  <li><strong>Traffic data:</strong> <a href="https://www.opendata.dk/city-of-copenhagen/faste-trafiktaellinger">City of Copenhagen - Faste Trafiktællinger</a></li>
+  <li><strong>Weather data:</strong> <a href="https://open-meteo.com/en/docs/historical-weather-api?start_date=2005-01-01&amp;end_date=2014-12-31&amp;timezone=auto&amp;latitude=55.6806&amp;longitude=12.5492&amp;hourly=temperature_2m,relative_humidity_2m,rain,snowfall,wind_speed_10m,weather_code,apparent_temperature,cloud_cover">Open-Meteo Historical Weather API</a></li>
+  <li><strong>Holiday data:</strong> <a href="https://www.timeanddate.com/holidays/denmark/">Denmark Holidays - Time and Date</a>
+    <ul>
+      <li>Holidays couldn’t be directly obtained as CSV, so we scraped each relevant year by hand into a CSV file.</li>
+    </ul>
+  </li>
+  <li><strong>Bike rides data:</strong> <a href="https://www.kaggle.com/datasets/emilhvitfeldt/bike-traffic-counts-in-copenhagen">Bike Traffic Counts in Copenhagen - Kaggle</a></li>
+  <li><strong>Accidents data:</strong> <a href="https://www.statbank.dk/UHELD4">StatBank Denmark - UHELD4</a></li>
+</ul>
+
+<h2 id="traffic-station-availability">Traffic station availability</h2>
+
+<p><img src="/socialdata2025-group60-final/pics/onlinestatus.png" alt="Online/offline status" /></p>
+
+<p>These traffic stations frequently go offline. This can be due to maintenance, the station getting removed, or the road getting repaved.</p>
+
 <h1 id="traffic-patterns">Traffic patterns</h1>
+
+<h2 id="weekdays-weekends-long-term-trends">Weekdays, Weekends, Long term trends</h2>
+
+<p><img src="/socialdata2025-group60-final/pics/stationmaps3.png" alt="Station Map" /></p>
+
+<p>This visualizes the locations of the traffic stations, the id they are refferred by,
+which direction the station is facing and traffic patterns in each direction for weekdays and weekends separately.</p>
+
+<ul>
+  <li><strong>Weekend/Weekday pattern:</strong> We can clearly see that weekends have a different traffic pattern than weekdays.
+Weekends usually have lower traffic counts and follow a much smoother curve, weekdays have more traffic and there are two peaks at 8:00 and 16:00.
+This can be explained by a lot of people travelling for work on weekdays, most having their shifts between 8:00 and 16:00, while for the weekend, they
+usually have more freedom in choosing when they want to travel, so traffic is more evenly distributed.
+There are also patterns in which direction people travel on weekdays. The traffic spike at 8:00 is usually higher for people travelling towards the city
+center than for people going out of it while this pattern reverses in the afternoon. This tells us that there are more people living outside the city center who work inside,
+than people who love in the center, but work outside of it.</li>
+</ul>
+
+<p>These trends can be observed on all stations, however each station also has it’s own unique was of manifesting this trend.
+For example, the pattern in directionality does not hold for all stations, but holds for almost all stations that are on roads directly leading to the city center.</p>
+
+<p><img src="/socialdata2025-group60-final/pics/longterm.png" alt="Long term trend" /></p>
+<ul>
+  <li><strong>Long term trends:</strong> On these plots we show how each stations traffic pattern changes over the span of the dataset.
+Because the stations keep going offline and online, only 8 stations have data complete enough to make this plot,
+other stations had at least 1 year where they were online for less than a week.</li>
+</ul>
+
+<p>We can observe that most stations keep their unique characteristic over long periods of time, with a common change being a slight decrease in traffic.
+A unique case here is station 562 with it’s weekend trend completely changing for the years of 2008,2009 and 2010.
+This traffic trend resembles a typical weekdays traffic trend instead.
+After some research we found the change was likely due to the construction of the SEB Domocile on the street corner, which has been finished in 2010.
+So the change in traffic was there because of all the people involved with the project was working on it over the weekends.</p>
+
+<p><img src="/pics/construction.png" alt="Construction" /></p>
+
 <h2 id="holidays">Holidays</h2>
 
 <p><img src="/socialdata2025-group60-final/assets/images/december_holiday_traffic.png" alt="Holiday traffic" /></p>
@@ -183,11 +244,11 @@
   <tbody>
     <tr>
       <td style="text-align: left">Bence Gattyan</td>
-      <td style="text-align: left">Researching for possible data story</td>
+      <td style="text-align: left">Finding datasets, combining and formatting them</td>
     </tr>
     <tr>
       <td style="text-align: left">Bence Gattyan</td>
-      <td style="text-align: left">Heatmaps</td>
+      <td style="text-align: left">Traffic patterns #1 weekends and weekdays, unique station patterns</td>
     </tr>
     <tr>
       <td style="text-align: left">João Diogo Silva Oliveira</td>
