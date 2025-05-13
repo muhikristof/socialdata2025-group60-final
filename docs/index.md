@@ -168,6 +168,10 @@ This horizontal bar chart shows the average vehicle count under various weather 
 
 Denmark experiences **frequent rainfall** and **relatively few sunny days** throughout the year. This plot reflects that reality—rain and drizzle are associated with high traffic volumes, indicating that Danes continue commuting and traveling regardless of wet conditions.
 
+## Conclusion
+
+Through the integration of multiple datasets—including traffic counts, weather conditions, holiday schedules, and accident reports—we've gained a deeper understanding of how various factors influence traffic patterns in Copenhagen. Our findings highlight clear differences between weekday and weekend traffic, seasonal effects, and the impact of weather, especially rain. The shift toward increased bicycle usage over time also reflects broader changes in urban mobility. These insights can support data-driven decisions in city planning and promote safer, more efficient transportation systems.
+
 ## Contributions
 
 | Person | Assigned task |
