@@ -8,13 +8,64 @@ title: Home
 - Kristóf Muhi, s240194
 
 # Introduction
-## Motivation
-## Data sources
+
 ## Basic distributionss of data
 
 ![Holiday traffic](/assets/images/basic_distributions.png)
 
+## Motivation
+
+We were interested in investingating traffic patterns in Copenhagen.
+Knowing when people choose to drive can give us insight into how demand for transportation changes and help us deploy alternaive modes of transportation more effectively.
+
+## Data sources
+
+Data was gathered from:<br/>
+Traffic data: https://www.opendata.dk/city-of-copenhagen/faste-trafiktaellinger <br/>
+Weather data: https://open-meteo.com/en/docs/historical-weather-api?start_date=2005-01-01&end_date=2014-12-31&timezone=auto&latitude=55.6806&longitude=12.5492&hourly=temperature_2m,relative_humidity_2m,rain,snowfall,wind_speed_10m,weather_code,apparent_temperature,cloud_cover <br/>
+Holiday data: https://www.timeanddate.com/holidays/denmark/ <br/>
+Holidays couldn't be directly obtained as csv so I scraped each relevant year by hand into a csv file.<br/>
+
+## Traffic station availability
+
+![Online/offline status](/pics/onlinestatus.png)
+
+These traffic stations frequently go offline. This can be due to maintenance, the station getting removed, or the road getting repaved.
+
 # Traffic patterns
+
+## Weekdays, Weekends, Long term trends
+
+![Station Map](/pics/stationmaps3.png)
+
+This visualizes the locations of the traffic stations, the id they are refferred by,
+which direction the station is facing and traffic patterns in each direction for weekdays and weekends separately.
+
+- **Weekend/Weekday pattern:** We can clearly see that weekends have a different traffic pattern than weekdays.
+Weekends usually have lower traffic counts and follow a much smoother curve, weekdays have more traffic and there are two peaks at 8:00 and 16:00.
+This can be explained by a lot of people travelling for work on weekdays, most having their shifts between 8:00 and 16:00, while for the weekend, they
+usually have more freedom in choosing when they want to travel, so traffic is more evenly distributed.
+There are also patterns in which direction people travel on weekdays. The traffic spike at 8:00 is usually higher for people travelling towards the city
+center than for people going out of it while this pattern reverses in the afternoon. This tells us that there are more people living outside the city center who work inside,
+than people who love in the center, but work outside of it.
+
+These trends can be observed on all stations, however each station also has it's own unique was of manifesting this trend.
+For example, the pattern in directionality does not hold for all stations, but holds for almost all stations that are on roads directly leading to the city center.
+
+
+![Long term trend](/pics/longterm.png)
+- **Long term trends:** On these plots we show how each stations traffic pattern changes over the span of the dataset.
+Because the stations keep going offline and online, only 8 stations have data complete enough to make this plot,
+other stations had at least 1 year where they were online for less than a week.
+
+We can observe that most stations keep their unique characteristic over long periods of time, with a common change being a slight decrease in traffic.
+A unique case here is station 562 with it's weekend trend completely changing for the years of 2008,2009 and 2010.
+This traffic trend resembles a typical weekdays traffic trend instead.
+After some research we found the change was likely due to the construction of the SEB Domocile on the street corner, which has been finished in 2010.
+So the change in traffic was there because of all the people involved with the project was working on it over the weekends.
+
+![Construction](/pics/construction.png)
+
 ## Holidays
 
 ![Holiday traffic](/assets/images/december_holiday_traffic.png)
@@ -110,8 +161,8 @@ Denmark experiences **frequent rainfall** and **relatively few sunny days** thro
 
 | Person | Assigned task |
 |:----------|:----------|
-| Bence Gattyan | Researching for possible data story |
-| Bence Gattyan | Heatmaps |
+| Bence Gattyan | Finding datasets, combining and formatting them |
+| Bence Gattyan | Traffic patterns #1 weekends and weekdays, unique station patterns |
 | João Diogo Silva Oliveira | Bokeh plot, Daily Accident Patterns by Day of the Week in Copenhagen, Accident heatmap  |
 | Kristof Muhi | Holidays, Effects of Rain, Danish weather |
 | Kristof Muhi | Making the website in Github Pages |
